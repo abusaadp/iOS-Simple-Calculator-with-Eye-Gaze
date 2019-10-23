@@ -13,6 +13,35 @@
 		B94DAEB4235D924C0076BCD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94DAEB2235D924C0076BCD4 /* Main.storyboard */; };
 		B94DAEB6235D92500076BCD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94DAEB5235D92500076BCD4 /* Assets.xcassets */; };
 		B94DAEB9235D92500076BCD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94DAEB7235D92500076BCD4 /* LaunchScreen.storyboard */; };
+		B95F7CA923608D9F0053EA74 /* VectorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95F7CA823608D9F0053EA74 /* VectorUtils.swift */; };
+		B9E9C36F236058E4007CB816 /* IntersectionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C368236058E2007CB816 /* IntersectionUtilities.swift */; };
+		B9E9C370236058E4007CB816 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C369236058E3007CB816 /* SCNVector3+Extensions.swift */; };
+		B9E9C371236058E4007CB816 /* SCNVector4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C36A236058E3007CB816 /* SCNVector4+Extensions.swift */; };
+		B9E9C372236058E4007CB816 /* IntersectionPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C36C236058E3007CB816 /* IntersectionPointNode.swift */; };
+		B9E9C373236058E4007CB816 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C36D236058E3007CB816 /* FaceNode.swift */; };
+		B9E9C374236058E4007CB816 /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C36E236058E3007CB816 /* LineSegment.swift */; };
+		B9E9C3792360591C007CB816 /* TrackingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3762360591C007CB816 /* TrackingMethod.swift */; };
+		B9E9C37A2360591C007CB816 /* LookAtDirectionIntersectionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3772360591C007CB816 /* LookAtDirectionIntersectionMethod.swift */; };
+		B9E9C37B2360591C007CB816 /* HeadDirectionIntersectionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3782360591C007CB816 /* HeadDirectionIntersectionMethod.swift */; };
+		B9E9C3832360593C007CB816 /* QuadrilateralTrackingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C37E2360593B007CB816 /* QuadrilateralTrackingRegion.swift */; };
+		B9E9C3842360593C007CB816 /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C37F2360593B007CB816 /* Quadrilateral.swift */; };
+		B9E9C3852360593C007CB816 /* QuadrilateralInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3802360593B007CB816 /* QuadrilateralInterpolator.swift */; };
+		B9E9C3862360593C007CB816 /* TrackingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3812360593B007CB816 /* TrackingRegion.swift */; };
+		B9E9C3872360593C007CB816 /* RectangleTrackingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3822360593B007CB816 /* RectangleTrackingRegion.swift */; };
+		B9E9C3892360594F007CB816 /* TrackingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C3882360594F007CB816 /* TrackingNode.swift */; };
+		B9E9C39723605AC0007CB816 /* FixedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C39623605ABF007CB816 /* FixedQueue.swift */; };
+		B9E9C39A23605BA2007CB816 /* Bounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C39923605BA1007CB816 /* Bounded.swift */; };
+		B9E9C39C23605C81007CB816 /* ClosedRange+UnitSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9C39B23605C7F007CB816 /* ClosedRange+UnitSpace.swift */; };
+		B9F672DE236025CF00D4F33D /* EyeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672DD236025CF00D4F33D /* EyeState.swift */; };
+		B9F672E02360263B00D4F33D /* FaceGestureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672DF2360263B00D4F33D /* FaceGestureEngine.swift */; };
+		B9F672E22360267600D4F33D /* FaceGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672E12360267600D4F33D /* FaceGesture.swift */; };
+		B9F672E4236026A900D4F33D /* BlinkGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672E3236026A900D4F33D /* BlinkGesture.swift */; };
+		B9F672E6236026DC00D4F33D /* EyesBlinkGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672E5236026DC00D4F33D /* EyesBlinkGesture.swift */; };
+		B9F672E92360572400D4F33D /* ScreenTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672E82360572400D4F33D /* ScreenTrackingViewController.swift */; };
+		B9F672F1236057C400D4F33D /* TrackingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672EA236057C200D4F33D /* TrackingConfiguration.swift */; };
+		B9F672F3236057C400D4F33D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672EC236057C300D4F33D /* Constants.swift */; };
+		B9F672F5236057C400D4F33D /* ScreenTrackingViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672EE236057C300D4F33D /* ScreenTrackingViewControllerDelegate.swift */; };
+		B9F672F7236057C400D4F33D /* TrackingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F672F0236057C400D4F33D /* TrackingType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +53,35 @@
 		B94DAEB5235D92500076BCD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B94DAEB8235D92500076BCD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B94DAEBA235D92500076BCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95F7CA823608D9F0053EA74 /* VectorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorUtils.swift; sourceTree = "<group>"; };
+		B9E9C368236058E2007CB816 /* IntersectionUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntersectionUtilities.swift; path = SceneKit/IntersectionUtilities.swift; sourceTree = "<group>"; };
+		B9E9C369236058E3007CB816 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "SceneKit/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		B9E9C36A236058E3007CB816 /* SCNVector4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SCNVector4+Extensions.swift"; path = "SceneKit/SCNVector4+Extensions.swift"; sourceTree = "<group>"; };
+		B9E9C36C236058E3007CB816 /* IntersectionPointNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntersectionPointNode.swift; sourceTree = "<group>"; };
+		B9E9C36D236058E3007CB816 /* FaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceNode.swift; sourceTree = "<group>"; };
+		B9E9C36E236058E3007CB816 /* LineSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineSegment.swift; path = SceneKit/LineSegment.swift; sourceTree = "<group>"; };
+		B9E9C3762360591C007CB816 /* TrackingMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingMethod.swift; sourceTree = "<group>"; };
+		B9E9C3772360591C007CB816 /* LookAtDirectionIntersectionMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAtDirectionIntersectionMethod.swift; sourceTree = "<group>"; };
+		B9E9C3782360591C007CB816 /* HeadDirectionIntersectionMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadDirectionIntersectionMethod.swift; sourceTree = "<group>"; };
+		B9E9C37E2360593B007CB816 /* QuadrilateralTrackingRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrilateralTrackingRegion.swift; sourceTree = "<group>"; };
+		B9E9C37F2360593B007CB816 /* Quadrilateral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
+		B9E9C3802360593B007CB816 /* QuadrilateralInterpolator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrilateralInterpolator.swift; sourceTree = "<group>"; };
+		B9E9C3812360593B007CB816 /* TrackingRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingRegion.swift; sourceTree = "<group>"; };
+		B9E9C3822360593B007CB816 /* RectangleTrackingRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleTrackingRegion.swift; sourceTree = "<group>"; };
+		B9E9C3882360594F007CB816 /* TrackingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackingNode.swift; path = SceneKit/TrackingNode.swift; sourceTree = "<group>"; };
+		B9E9C39623605ABF007CB816 /* FixedQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedQueue.swift; sourceTree = "<group>"; };
+		B9E9C39923605BA1007CB816 /* Bounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounded.swift; sourceTree = "<group>"; };
+		B9E9C39B23605C7F007CB816 /* ClosedRange+UnitSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClosedRange+UnitSpace.swift"; sourceTree = "<group>"; };
+		B9F672DD236025CF00D4F33D /* EyeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeState.swift; sourceTree = "<group>"; };
+		B9F672DF2360263B00D4F33D /* FaceGestureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceGestureEngine.swift; sourceTree = "<group>"; };
+		B9F672E12360267600D4F33D /* FaceGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceGesture.swift; sourceTree = "<group>"; };
+		B9F672E3236026A900D4F33D /* BlinkGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkGesture.swift; sourceTree = "<group>"; };
+		B9F672E5236026DC00D4F33D /* EyesBlinkGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesBlinkGesture.swift; sourceTree = "<group>"; };
+		B9F672E82360572400D4F33D /* ScreenTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTrackingViewController.swift; sourceTree = "<group>"; };
+		B9F672EA236057C200D4F33D /* TrackingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingConfiguration.swift; sourceTree = "<group>"; };
+		B9F672EC236057C300D4F33D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9F672EE236057C300D4F33D /* ScreenTrackingViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTrackingViewControllerDelegate.swift; sourceTree = "<group>"; };
+		B9F672F0236057C400D4F33D /* TrackingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,10 @@
 		B94DAEAB235D924C0076BCD4 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				B9E9C39823605BA1007CB816 /* Extensions */,
+				B9E9C39523605ABF007CB816 /* Utilities */,
+				B9F672E7236056F000D4F33D /* ScreenTrackingViewController */,
+				B9F672DC236025A900D4F33D /* Gestures */,
 				B94DAEAC235D924C0076BCD4 /* AppDelegate.swift */,
 				B94DAEAE235D924C0076BCD4 /* SceneDelegate.swift */,
 				B94DAEB0235D924C0076BCD4 /* ViewController.swift */,
@@ -65,6 +127,104 @@
 				B94DAEBA235D92500076BCD4 /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		B9E9C36B236058E3007CB816 /* Debug Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C36C236058E3007CB816 /* IntersectionPointNode.swift */,
+				B9E9C36D236058E3007CB816 /* FaceNode.swift */,
+			);
+			name = "Debug Visualization";
+			path = "SceneKit/Debug Visualization";
+			sourceTree = "<group>";
+		};
+		B9E9C3752360591C007CB816 /* Tracking Methods */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C3762360591C007CB816 /* TrackingMethod.swift */,
+				B9E9C3772360591C007CB816 /* LookAtDirectionIntersectionMethod.swift */,
+				B9E9C3782360591C007CB816 /* HeadDirectionIntersectionMethod.swift */,
+			);
+			path = "Tracking Methods";
+			sourceTree = "<group>";
+		};
+		B9E9C37C2360593B007CB816 /* Tracking Regions */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C37D2360593B007CB816 /* QuadrilateralTrackingRegion */,
+				B9E9C3812360593B007CB816 /* TrackingRegion.swift */,
+				B9E9C3822360593B007CB816 /* RectangleTrackingRegion.swift */,
+			);
+			path = "Tracking Regions";
+			sourceTree = "<group>";
+		};
+		B9E9C37D2360593B007CB816 /* QuadrilateralTrackingRegion */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C37E2360593B007CB816 /* QuadrilateralTrackingRegion.swift */,
+				B9E9C37F2360593B007CB816 /* Quadrilateral.swift */,
+				B9E9C3802360593B007CB816 /* QuadrilateralInterpolator.swift */,
+			);
+			path = QuadrilateralTrackingRegion;
+			sourceTree = "<group>";
+		};
+		B9E9C39523605ABF007CB816 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C39623605ABF007CB816 /* FixedQueue.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B9E9C39823605BA1007CB816 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B95F7CA823608D9F0053EA74 /* VectorUtils.swift */,
+				B9E9C39B23605C7F007CB816 /* ClosedRange+UnitSpace.swift */,
+				B9E9C39923605BA1007CB816 /* Bounded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B9F672DC236025A900D4F33D /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				B9F672DD236025CF00D4F33D /* EyeState.swift */,
+				B9F672DF2360263B00D4F33D /* FaceGestureEngine.swift */,
+				B9F672E12360267600D4F33D /* FaceGesture.swift */,
+				B9F672E3236026A900D4F33D /* BlinkGesture.swift */,
+				B9F672E5236026DC00D4F33D /* EyesBlinkGesture.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		B9F672E7236056F000D4F33D /* ScreenTrackingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C37C2360593B007CB816 /* Tracking Regions */,
+				B9E9C3752360591C007CB816 /* Tracking Methods */,
+				B9F672F92360580A00D4F33D /* SceneKit */,
+				B9F672EC236057C300D4F33D /* Constants.swift */,
+				B9F672EE236057C300D4F33D /* ScreenTrackingViewControllerDelegate.swift */,
+				B9F672EA236057C200D4F33D /* TrackingConfiguration.swift */,
+				B9F672F0236057C400D4F33D /* TrackingType.swift */,
+				B9F672E82360572400D4F33D /* ScreenTrackingViewController.swift */,
+			);
+			path = ScreenTrackingViewController;
+			sourceTree = "<group>";
+		};
+		B9F672F92360580A00D4F33D /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9C3882360594F007CB816 /* TrackingNode.swift */,
+				B9E9C36B236058E3007CB816 /* Debug Visualization */,
+				B9E9C368236058E2007CB816 /* IntersectionUtilities.swift */,
+				B9E9C36E236058E3007CB816 /* LineSegment.swift */,
+				B9E9C369236058E3007CB816 /* SCNVector3+Extensions.swift */,
+				B9E9C36A236058E3007CB816 /* SCNVector4+Extensions.swift */,
+			);
+			name = SceneKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +298,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F672F7236057C400D4F33D /* TrackingType.swift in Sources */,
+				B9E9C3842360593C007CB816 /* Quadrilateral.swift in Sources */,
 				B94DAEB1235D924C0076BCD4 /* ViewController.swift in Sources */,
+				B9E9C373236058E4007CB816 /* FaceNode.swift in Sources */,
+				B9F672F3236057C400D4F33D /* Constants.swift in Sources */,
+				B9E9C36F236058E4007CB816 /* IntersectionUtilities.swift in Sources */,
+				B9E9C370236058E4007CB816 /* SCNVector3+Extensions.swift in Sources */,
+				B9F672DE236025CF00D4F33D /* EyeState.swift in Sources */,
+				B9E9C37B2360591C007CB816 /* HeadDirectionIntersectionMethod.swift in Sources */,
 				B94DAEAD235D924C0076BCD4 /* AppDelegate.swift in Sources */,
+				B9F672E02360263B00D4F33D /* FaceGestureEngine.swift in Sources */,
+				B9E9C39A23605BA2007CB816 /* Bounded.swift in Sources */,
+				B9F672E4236026A900D4F33D /* BlinkGesture.swift in Sources */,
+				B9F672E22360267600D4F33D /* FaceGesture.swift in Sources */,
+				B9E9C3792360591C007CB816 /* TrackingMethod.swift in Sources */,
+				B9F672E92360572400D4F33D /* ScreenTrackingViewController.swift in Sources */,
+				B95F7CA923608D9F0053EA74 /* VectorUtils.swift in Sources */,
+				B9F672F1236057C400D4F33D /* TrackingConfiguration.swift in Sources */,
+				B9E9C39723605AC0007CB816 /* FixedQueue.swift in Sources */,
+				B9E9C371236058E4007CB816 /* SCNVector4+Extensions.swift in Sources */,
+				B9E9C3852360593C007CB816 /* QuadrilateralInterpolator.swift in Sources */,
+				B9E9C3892360594F007CB816 /* TrackingNode.swift in Sources */,
+				B9E9C3832360593C007CB816 /* QuadrilateralTrackingRegion.swift in Sources */,
+				B9F672E6236026DC00D4F33D /* EyesBlinkGesture.swift in Sources */,
+				B9E9C3872360593C007CB816 /* RectangleTrackingRegion.swift in Sources */,
+				B9E9C3862360593C007CB816 /* TrackingRegion.swift in Sources */,
+				B9E9C39C23605C81007CB816 /* ClosedRange+UnitSpace.swift in Sources */,
+				B9F672F5236057C400D4F33D /* ScreenTrackingViewControllerDelegate.swift in Sources */,
+				B9E9C374236058E4007CB816 /* LineSegment.swift in Sources */,
+				B9E9C37A2360591C007CB816 /* LookAtDirectionIntersectionMethod.swift in Sources */,
 				B94DAEAF235D924C0076BCD4 /* SceneDelegate.swift in Sources */,
+				B9E9C372236058E4007CB816 /* IntersectionPointNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
