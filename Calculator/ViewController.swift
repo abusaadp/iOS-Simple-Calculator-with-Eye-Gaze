@@ -10,13 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, ScreenTrackingViewControllerDelegate {
     
-    var numberOnScreen : Double = 0
-    var previousNumber : Double = 0
-    var performingMath : Bool = false
-    var operation = 0
-    
-    @IBOutlet weak var resultBoard: UILabel!
-    
     func didGestureForCalibration() {
         // do stuff
     }
@@ -40,43 +33,9 @@ class ViewController: UIViewController, ScreenTrackingViewControllerDelegate {
 
     // MARK: - Demo Interface
 
-    @IBOutlet var buttons: [UIButton]!
     @IBOutlet var buttonStackView: UIView!
     
     var animatorsForButtons: [UIButton: UIViewPropertyAnimator] = [:]
-
-    func updateButtonHighlightForTrackingPosition() {
-
-        for button in self.buttons {
-            if button.hitTest(self.view.convert(self.trackingView.center, to: button), with: nil) != nil {
-                button.isHighlighted = true
-                let animator: UIViewPropertyAnimator
-                if let a = animatorsForButtons[button] {
-                    animator = a
-                } else {
-                    let springParams = UISpringTimingParameters(dampingRatio: 1.0)
-                    animator = UIViewPropertyAnimator(duration: 0.0, timingParameters: springParams)
-                    animatorsForButtons[button] = animator
-                }
-
-                animator.stopAnimation(true)
-                animator.addAnimations {
-                    button.transform = CGAffineTransform(scaleX: 0.87, y: 0.87)
-                }
-                animator.startAnimation()
-            } else {
-                button.isHighlighted = false
-
-                if let animator = animatorsForButtons[button] {
-                    animator.stopAnimation(true)
-                    animator.addAnimations {
-                        button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-                    }
-                    animator.startAnimation()
-                }
-            }
-        }
-    }
 
     func configureUI() {
         guard self.isViewLoaded else { return }
@@ -112,6 +71,8 @@ class ViewController: UIViewController, ScreenTrackingViewControllerDelegate {
         self.view.addSubview(trackingView)
 
         self.configureUI()
+        
+        self.performSegue(withIdentifier: "showCalculator", sender: nil)
     }
 
 
@@ -122,92 +83,9 @@ class ViewController: UIViewController, ScreenTrackingViewControllerDelegate {
             if let position = trackedPositionOnScreen {
                 self.trackingView.isHidden = false
                 self.trackingView.center = position
-                self.updateButtonHighlightForTrackingPosition()
             } else {
                 self.trackingView.isHidden = true
             }
-        }
-    }
-
-    @IBAction func numbers(_ sender: UIButton) {
-        if performingMath == true  {
-            resultBoard.text = String(sender.tag - 1)
-            numberOnScreen = Double(resultBoard.text!)!
-            performingMath = false
-        } else {
-            if resultBoard.text == "0" || operation == -1 {
-                resultBoard.text = String(sender.tag - 1)
-                operation = 0
-            } else {
-                resultBoard.text = resultBoard.text! + String(sender.tag - 1)
-            }
-            numberOnScreen = Double(resultBoard.text!)!
-        }
-    }
-    
-    @IBAction func buttonAction(_ sender: UIButton) {
-        
-        if resultBoard.text != "" && sender.tag != 11 && sender.tag != 16 {
-            if operation == 12 { //Divide
-                resultBoard.text = String(previousNumber / numberOnScreen)
-            }
-            
-            if operation == 13 { //Multiply
-                resultBoard.text = String(previousNumber * numberOnScreen)
-            }
-            
-            if operation == 14 { //Subtract
-                resultBoard.text = String(previousNumber - numberOnScreen)
-            }
-            
-            if operation == 15 { //Add
-                resultBoard.text = String(previousNumber + numberOnScreen)
-            }
-            operation = -1
-            
-            previousNumber = Double(resultBoard.text!)!
-            
-            if sender.tag == 12 { //Divide
-                resultBoard.text = "/"
-            }
-            
-            if sender.tag == 13 { //Multiply
-                resultBoard.text = "x"
-            }
-            
-            if sender.tag == 14 { //Subtract
-                resultBoard.text = "-"
-            }
-            
-            if sender.tag == 15 { //Add
-                resultBoard.text = "+"
-            }
-            
-            operation = sender.tag
-            performingMath = true
-        } else if sender.tag == 16 {
-            if operation == 12 { //Divide
-                resultBoard.text = String(previousNumber / numberOnScreen)
-            }
-            
-            if operation == 13 { //Multiply
-                resultBoard.text = String(previousNumber * numberOnScreen)
-            }
-            
-            if operation == 14 { //Subtract
-                resultBoard.text = String(previousNumber - numberOnScreen)
-            }
-            
-            if operation == 15 { //Add
-                resultBoard.text = String(previousNumber + numberOnScreen)
-            }
-            operation = -1
-        } else if sender.tag == 11 {
-            resultBoard.text = "0"
-            previousNumber = 0
-            numberOnScreen = 0
-            operation = 0
-            performingMath = false
         }
     }
 }

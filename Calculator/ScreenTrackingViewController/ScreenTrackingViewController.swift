@@ -60,15 +60,15 @@ class ScreenTrackingViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.frame = self.view.bounds
         self.view.addSubview(self.sceneView)
         
-        let eyesGesture = EyesBlinkGesture(requiredGestures: 2)
-        eyesGesture.onGesture = {
-            print("Blink Gesture Activated")
-            DispatchQueue.main.async {
-                self.delegate?.didGestureForCalibration()
-                self.calibrate()
-            }
-        }
-        self.faceGestureEngine.gestures.append(eyesGesture)
+//        let eyesGesture = EyesBlinkGesture(requiredGestures: 2)
+//        eyesGesture.onGesture = {
+//            print("Blink Gesture Activated")
+//            DispatchQueue.main.async {
+//                self.delegate?.didGestureForCalibration()
+//                self.calibrate()
+//            }
+//        }
+//        self.faceGestureEngine.gestures.append(eyesGesture)
     }
 
     override func viewWillAppear(_ animated: Bool) {
